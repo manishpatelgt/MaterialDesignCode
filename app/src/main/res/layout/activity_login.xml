@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:gravity="top"
+        android:scaleType="fitXY"
+        android:src="@drawable/spa"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/activity_padding">
+
+        <LinearLayout
+            android:id="@+id/layoutLoginEdits"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextLoginUser"
+                style="@style/DataEntryTextStyle"
+                android:hint="UserName"
+                android:inputType="text"
+                android:tag="Login"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/editTextLoginPassword"
+                style="@style/DataEntryTextStyle"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:tag="Password"
+                android:textCursorDrawable="@null" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/LargeButton2"
+            android:background="@drawable/shape_rec"
+            android:onClick="loginButtonClick"
+            android:text="Login" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="version"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/row_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/row_customerid"
+                layout="@layout/row_detailview" />
+
+            <include
+                android:id="@+id/row_slipno"
+                layout="@layout/row_detailview" />
+
+            <include
+                android:id="@+id/row_name"
+                layout="@layout/row_detailview" />
+
+            <include
+                android:id="@+id/row_address"
+                layout="@layout/row_detailview" />
+
+            <include
+                android:id="@+id/row_category"
+                layout="@layout/row_detailview" />
+
+            <include
+                android:id="@+id/row_year"
+                layout="@layout/row_detailview" />
+
+            <include
+                android:id="@+id/row_price"
+                layout="@layout/row_detailview" />
+
+            <include
+                android:id="@+id/row_mobile"
+                layout="@layout/row_detailview" />
+
+
+
+            <include
+                android:id="@+id/row_authoperson"
+                layout="@layout/row_detailview" />
+
+            <include
+                android:id="@+id/row_datetime"
+                layout="@layout/row_detailview" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="Search"/>
+
+    <item
+        android:id="@+id/action_export"
+        android:orderInCategory="100"
+        android:title="Export contact"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_import"
+        android:orderInCategory="100"
+        android:title="Import contact"
+        app:showAsAction="never" />
+
+    <!--<item
+        android:id="@+id/action_clear"
+        android:orderInCategory="100"
+        android:title="Clear All"
+        app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="About us"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title="Share CSV"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never" />
+</menu>

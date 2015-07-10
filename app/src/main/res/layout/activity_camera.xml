@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/capturePhotoButton"
+        style="@style/LongButton3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/selector_button_black"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:onClick="capturePhoto"
+        android:text="TAKE PICTURE" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/capturePhotoButton"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/image_border"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/capturedPhotoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="6dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/shape_textview_rounded_lightblack"
+            android:scaleType="fitXY"
+            android:src="@drawable/placeholder_man_yellow" />
+
+    </FrameLayout>
+</RelativeLayout>
