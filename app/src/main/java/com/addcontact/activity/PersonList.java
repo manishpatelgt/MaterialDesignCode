@@ -135,7 +135,6 @@ public class PersonList extends Fragment {
                 mSwipeRefreshLayout.clearAnimation();
                 //cAapplication.setDataObject(null);
             }
-
         }
     }
 
